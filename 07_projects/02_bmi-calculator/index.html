@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="../../src/output.css">
+</head>
+<body class="bg-slate-800">
+    <div class="container mx-auto p-4">
+        <h1 class="text-4xl text-center text-white">BMI Calculator</h1>
+        <form class="mt-4">
+            <div class="flex flex-col items-center">
+                <label for="weight" class="text-white">Weight (kg)</label>
+                <input type="number" name="weight" id="weight" class="w-1/4 p-2 rounded-lg text-black" required>
+            </div>
+            <div class="flex flex-col items-center mt-4">
+                <label for="height" class="text-white">Height (cm)</label>
+                <input type="number" name="height" id="height" class="w-1/4 p-2 rounded-lg text-black" required>
+            </div>
+            <div class="flex flex-col items-center mt-4">
+                <button id="subBtn" type="submit" class="bg-blue-500 text-white p-2 rounded-lg">Calculate</button>
+            </div>
+        </form>
+        <div class="flex flex-col items-center mt-4">
+            <h2 class="text-2xl text-white" id="result"></h2>
+        </div>
+</body>
+<script src="script.js"></script>
+</html>

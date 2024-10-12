@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Colour</title>
+    <style>
+        .box {
+            border: 2px solid black;
+        }
+        #purple {
+            background-color: purple;
+        }
+        #red {
+            background-color: red;
+        }
+        #green {
+            background-color: green;
+        }
+        #fuchsia {
+            background-color: fuchsia;
+        }
+    </style>
+    <link rel="stylesheet" href="../../src/output.css">
+</head>
+<body class="flex flex-col justify-center items-center h-[100vh]">
+    <div class="colours w-[100%] flex gap-4 justify-center items-center">
+        <div id="purple" class="box border-black w-36 h-36 cursor-pointer rounded-2xl"></div>
+        <div id="red" class="box border-black w-36 h-36 cursor-pointer rounded-2xl"></div>
+        <div id="green" class="box border-black w-36 h-36 cursor-pointer rounded-2xl"></div>
+        <div id="fuchsia" class="box border-black w-36 h-36 cursor-pointer rounded-2xl"></div>
+    </div>
+    <div class="text mt-6 text-2xl">
+        Select the box to change the background colour
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
